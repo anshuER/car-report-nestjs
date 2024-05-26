@@ -17,6 +17,7 @@ import { Report } from './reports/rerport.entity';
       database: 'db1.sqlite',
       // Point5: connecting entity here.
       entities: [User, Report],
+      // Point7: work with migration of a table if new coloumn added or delete it updates.
       synchronize: true,
     }),
     UsersModule,
